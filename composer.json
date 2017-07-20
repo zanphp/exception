@@ -6,8 +6,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Zan\\Framework\\Foundation\\Exception\\": "src/Exception",
-      "ZanPHP\\Exception\\": "src/"
+      "ZanPHP\\Exception\\": "src"
     }
   },
   "extra": {
