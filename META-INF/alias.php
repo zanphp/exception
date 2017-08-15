@@ -9,4 +9,9 @@ return [
     \ZanPHP\Exception\System\ClassNotFoundException::class      => "\\Zan\\Framework\\Foundation\\Exception\\System\\ClassNotFoundException",
     \ZanPHP\Exception\System\FileNotFoundException::class       => "\\Zan\\Framework\\Foundation\\Exception\\System\\FileNotFoundException",
     \ZanPHP\Exception\System\InvalidArgumentException::class    => "\\Zan\\Framework\\Foundation\\Exception\\System\\InvalidArgumentException",
+
+    \ZanPHP\Exception\Network\UnexpectedResponseException::class => "\\Zan\\Framework\\Network\\Common\\Exception\\UnexpectedResponseException",
+    \ZanPHP\Exception\Network\ConnectionFailedException::class   => "\\Zan\\Framework\\Network\\Exception\\ConnectionFailedException",
+    \ZanPHP\Exception\Network\ExcessConcurrencyException::class  => "\\Zan\\Framework\\Network\\Exception\\ExcessConcurrencyException",
+    \ZanPHP\Exception\Network\ServerTimeoutException::class      => "\\Zan\\Framework\\Network\\Exception\\ServerTimeoutException",
 ];
