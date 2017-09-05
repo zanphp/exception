@@ -1,7 +1,6 @@
 <?php
 
-
-namespace ZanPHP\Exception\Network;
+namespace Zan\Framework\Network\Exception;
 
 use ZanPHP\Exception\SystemException;
 

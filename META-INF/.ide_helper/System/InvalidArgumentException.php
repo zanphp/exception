@@ -2,7 +2,7 @@
 
 namespace Zan\Framework\Foundation\Exception\System;
 
-use Zan\Framework\Foundation\Exception\SystemException;
+use ZanPHP\Exception\SystemException;
 
 class InvalidArgumentException extends SystemException {
 

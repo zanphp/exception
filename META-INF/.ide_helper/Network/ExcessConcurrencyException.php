@@ -2,8 +2,7 @@
 
 namespace Zan\Framework\Network\Exception;
 
-
-use Zan\Framework\Foundation\Exception\ZanException;
+use ZanPHP\Exception\ZanException;
 
 class ExcessConcurrencyException extends ZanException {
 

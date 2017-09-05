@@ -2,37 +2,24 @@
 
 namespace Zan\Framework\Foundation\Exception;
 
-use Exception;
 
-class ZanException extends Exception
+class ZanException extends \Exception
 {
-    /**
-     * @var null
-     *  * null : do not logging
-     *  * LogLevel CONST ...
-     */
-    public $logLevel = null;
+    private $ZanException;
 
-    /**
-     * 用于记录异常出现时的上下文信息
-     * @var array
-     */
-    private $metaData = [];
-
-    public function __construct($message = '', $code = 0, Exception $previous = null, array $metaData = [])
+    public function __construct($message = '', $code = 0, \Exception $previous = null, array $metaData = [])
     {
         parent::__construct($message, $code, $previous);
-
-        $this->metaData = $metaData;
+        $this->ZanException = new \ZanPHP\Exception\ZanException($message, $code, $previous);
     }
 
     public function getMetadata()
     {
-        return $this->metaData;
+        $this->ZanException->getMetadata();
     }
 
     public function setMetadata(array $metaData)
     {
-        $this->metaData = $metaData;
+        $this->ZanException->setMetadata($metaData);
     }
 }
